@@ -1,0 +1,26 @@
+.login #loginform {
+	background: #F8F8F8 !important;
+	color: #000;
+}
+
+.login h1 a {
+	background-image: url('../images/logo.svg') !important;
+    width: auto;
+    background-size: contain;
+    height: 80px;
+}
+
+.login #backtoblog a, .login #nav a {
+	color: white;
+}
+
+.login #backtoblog a:hover, .login #nav a:hover, .login h1 a:hover {
+	color: #f04b23;
+}
+
+body.login {
+  background: #03131F url("../images/wp-login-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}

@@ -1,0 +1,13 @@
+/* TEAM */
+
+  Web Developer: Gary McNally
+  Contact: gary [at] digital-only.com
+  Twitter: @garymcnally
+  Website: https://www.digital-only.com
+  From: Ireland/Northern Ireland
+
+/* SITE */
+
+  Last update: xx/xx/xx
+  Doctype: HTML5
+  IDE: Atom, FileZilla, Adobe XD, Wordpress, Bootstrap, SASS, matchheight.js, bxslider.js, fancybox.js

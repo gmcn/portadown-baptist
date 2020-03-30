@@ -1,0 +1,127 @@
+footer {
+
+  padding-top: 50px;
+  // padding-bottom: 25px;
+  background: rgb(2,103,179);
+  background: linear-gradient(135deg, rgba(2,103,179,1) 0%, rgba(1,52,90,1) 100%);
+  color: #fff;
+
+  .navbar-brand {
+    // display: block;
+  }
+
+  ul.footer_social {
+
+    clear: both;
+    display: block;
+    margin: 50px 0 0 0;
+    @include md {
+      margin: 200px 0 0 0;
+    }
+    padding: 0;
+    li {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  ul.footer_nav {
+    margin: 10px 0 0 0;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+
+    a {
+      display: block;
+      font-weight: 300;
+      margin-bottom: 15px;
+      &:hover {
+        color: #4099FF;
+      }
+    }
+  }
+
+  .footer_twitter {
+    @include md {
+      border-right: 1px solid #fff;
+      border-left: 1px solid #fff;
+    }
+    padding-left: 30px;
+    padding-right: 30px;
+    a {
+      transition: .5s;
+      &:hover {
+        color: #4099FF;
+      }
+      &:visited {
+        color: #fff;
+      }
+    }
+    &__wrapper {
+      margin-bottom: 40px;
+      p {
+        margin-bottom: 0;
+      }
+      a.screen_name {
+        font-weight: 600;
+        color: #fff;
+        &:hover {
+          color: #4099FF;
+        }
+      }
+      img {
+        float: left;
+        margin: 5px 10px 50px 0;
+      }
+      &__timestamp {
+        color: #4099FF;
+      }
+    }
+  }
+
+  .footer_links {
+    text-align: left;
+    @include md {
+      text-align: right;
+      padding-top: 100px;
+    }
+    a {
+      display: block;
+      &:hover {
+        color: #4099FF;
+      }
+      &:visited {
+        color: #fff;
+      }
+    }
+    p {
+      margin-top: 50px;
+    }
+    a.byline {
+      display: inline-block;
+      font-weight: 700;
+      &:hover {
+        color: #4099FF;
+      }
+    }
+  }
+
+  .signature {
+    margin-top: 25px;
+    .footer_sponsors {
+      @include lg {
+        width: 12.5%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+
+
+  a {
+    color: #fff;
+  }
+
+}

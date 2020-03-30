@@ -1,0 +1,52 @@
+.navbar-default .navbar-nav > li.menu-item-has-children a {
+  /*padding-right: 50px;*/
+}
+
+.navbar-default .navbar-nav > li.menu-item-has-children a:after {
+  content: " ";
+  color: #fff;
+  padding: 0 0 0 13px;
+  background-image: url(../images/nav_arrow_down.png);
+  background-repeat: no-repeat;
+}
+
+ul.nav li.menu-item-has-children:hover > ul.dropdown-menu {
+  @include md {
+    display: block !important;
+  }
+}
+
+header {
+  background: #03131F;
+  color: #fff;
+  .navbar-brand {
+    padding: 15px;
+  }
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    transition: .5s;
+    &:hover {
+      color: #03131F;
+    }
+  }
+  .navbar-right {
+    margin-top: 5px;
+  }
+  .social-header {
+    margin-left: 30px;
+    li {
+      display: inline-block;
+      width: 30%;
+      padding-right: 5px;
+      text-align: center;
+    }
+    li > a {
+      padding-right: 5px;
+      padding-left: 0;
+      &:hover {
+        background: none;
+      }
+    }
+  }
+}
