@@ -14,15 +14,6 @@
 
 get_header(); ?>
 
-gary mcnally
-
-<div class="callout-card">
-	<div class="v-align">
-		Gary
-	</div>
-
-</div>
-
 
 
 	<div id="primary" class="content-area">

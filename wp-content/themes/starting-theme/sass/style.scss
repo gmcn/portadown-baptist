@@ -62,7 +62,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-@import "forms/forms";
+// @import "forms/forms";
 
 /*--------------------------------------------------------------
 # Navigation
@@ -103,6 +103,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Homepage
 --------------------------------------------------------------*/
 @import "pages/home";
+@import "pages/contact";
 
 /*--------------------------------------------------------------
 # Content

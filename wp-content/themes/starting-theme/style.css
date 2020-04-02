@@ -330,6 +330,56 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
+.vert-align {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: calc(100% - 30px);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.page-head {
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  height: 225px;
+  font-weight: 300; }
+  .page-head h3 {
+    margin: 0;
+    text-shadow: 2px 2px 10px #000;
+    font-weight: 300;
+    font-size: 28px; }
+    .page-head h3 span {
+      font-weight: 700; }
+  .page-head img {
+    width: 100%;
+    height: 100%; }
+  .page-head .vert-align {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.breadcrumbs {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  text-align: right;
+  color: #41B9B9;
+  font-weight: 600; }
+  .breadcrumbs a {
+    color: #41B9B9; }
+    .breadcrumbs a:hover {
+      color: #000; }
+
 .cc-window {
   opacity: 1;
   transition: opacity 1s ease; }
@@ -591,77 +641,6 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6em 1em .4em; }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa; }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb; }
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 3px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  input[type="number"]:focus,
-  input[type="tel"]:focus,
-  input[type="range"]:focus,
-  input[type="date"]:focus,
-  input[type="month"]:focus,
-  input[type="week"]:focus,
-  input[type="time"]:focus,
-  input[type="datetime"]:focus,
-  input[type="datetime-local"]:focus,
-  input[type="color"]:focus,
-  textarea:focus {
-    color: #111; }
-
-select {
-  border: 1px solid #ccc; }
-
-textarea {
-  width: 100%; }
-
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -893,6 +872,97 @@ footer {
 /*--------------------------------------------------------------
 # Homepage
 --------------------------------------------------------------*/
+.contact {
+  padding-bottom: 50px; }
+  .contact_content {
+    font-size: 18px;
+    color: #41B9B9;
+    font-weight: 600; }
+    @media screen and (min-width: 992px) {
+      .contact_content {
+        text-align: right; } }
+    .contact_content h1 {
+      margin-top: 0;
+      font-size: 72px;
+      font-weight: 300;
+      color: #383838; }
+      @media screen and (min-width: 992px) {
+        .contact_content h1 {
+          margin-bottom: 50px; } }
+    .contact_content a {
+      color: #41B9B9; }
+      .contact_content a:hover {
+        color: #181914; }
+  .contact_form p {
+    position: relative; }
+  .contact_form label {
+    color: #41B9B9;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    top: 33px;
+    left: 10px;
+    z-index: 9999; }
+  .contact_form input {
+    background: rgba(65, 185, 185, 0.2);
+    padding-left: 130px;
+    border-radius: 0;
+    color: #181914;
+    font-size: 22px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px; }
+  .contact_form textarea {
+    background: rgba(65, 185, 185, 0.2);
+    padding-top: 35px;
+    border-radius: 0;
+    font-size: 22px; }
+  .contact_form select {
+    background-color: rgba(65, 185, 185, 0.2);
+    padding-left: 130px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(images/select_dd.svg);
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    font-size: 22px; }
+  .contact_form .wpcf7-submit {
+    padding: 20px 40px;
+    text-transform: uppercase;
+    background: #41B9B9;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    margin-top: 15px; }
+  .contact_locations {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+    .contact_locations:nth-of-type(odd) .contact_locations__title {
+      background: #94ADAA;
+      color: #41686B; }
+    .contact_locations:nth-of-type(even) .contact_locations__title {
+      background: #477376;
+      color: #9EB8B5; }
+    .contact_locations__title {
+      font-size: 26px;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 15px 20px 0 20px;
+      line-height: 1em; }
+    .contact_locations img {
+      width: 100%; }
+    .contact_locations a {
+      background: #41B9B9;
+      padding: 20px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 22px; }
+      .contact_locations a:hover {
+        background: #000;
+        color: #fff; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -4827,17 +4897,15 @@ output {
   color: #555555; }
 
 .form-control {
+  border: none;
   display: block;
   width: 100%;
-  height: 34px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.428571429;
   color: #555555;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -5006,8 +5074,7 @@ select[multiple].input-sm,
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px; }
+  line-height: 1.5; }
 .form-group-sm select.form-control {
   height: 30px;
   line-height: 30px; }
@@ -5049,8 +5116,7 @@ select[multiple].input-lg,
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
-  line-height: 1.3333333;
-  border-radius: 6px; }
+  line-height: 1.3333333; }
 .form-group-lg select.form-control {
   height: 46px;
   line-height: 46px; }
