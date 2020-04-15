@@ -63,4 +63,4 @@
 
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content <?php echo basename(get_permalink()); ?>">
