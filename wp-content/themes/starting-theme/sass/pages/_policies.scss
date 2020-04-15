@@ -1,0 +1,42 @@
+.privacy-policy {
+  padding: 50px 0;
+  color: #fff;
+  background: #6D99BA;
+  .breadcrumbs {
+    color: #fff;
+  }
+  h1, h2, h3, h4 {
+    font-size: 40px;
+    line-height: 1em;
+    font-weight: 300;
+    @include md {
+      text-align: right;
+      margin: 0;
+      font-size: 60px;
+    }
+  }
+  a {
+    color: #fff;
+    &:hover {
+      color: #01345A;
+    }
+  }
+  .back {
+    @include md {
+      text-align: right;
+    }
+    a {
+      background: #fff;
+      border-radius: 3px;
+      color: #6D99BA;
+      padding: 15px 25px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 12px;
+      &:hover {
+        background: #01345A;
+        color: #fff;
+      }
+    }
+  }
+}
