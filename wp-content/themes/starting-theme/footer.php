@@ -154,8 +154,8 @@
 
 			</div>
 			<div class="col-md-4 footer_links matchheight">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Cookies</a>
+				<a href="/privacy-policy">Privacy Policy</a>
+				<a href="/privacy-policy">Cookies</a>
 				<p>Website by <a class="byline" href="#">Cornell</a></p>
 
 			</div>
